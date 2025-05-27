@@ -1,0 +1,75 @@
+%-------------
+% PACKAGES %%
+%-------------
+\documentclass[11pt]{article}
+\usepackage[english]{babel} %CHANGE LANGUAGE 
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}
+\usepackage{subcaption}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{minted}
+\usepackage{fullpage}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage[sorting=none]{biblatex}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\begin{center}
+%---------------------
+%	HEADING SECTIONS
+%---------------------
+\textsc{\LARGE Uppsala University}\\[1.5cm] % Name of your university/college
+
+%------------------
+%	TITLE SECTION
+%------------------
+\HRule \\[0.4cm]
+{ \huge \bfseries Title\\Title}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%--------------------
+%	AUTHOR SECTION
+%--------------------
+\large\emph{Author:}\\ \\[1.0cm]
+
+
+{\large \today}\\[1cm] % Date
+
+%----------
+%	LOGO 
+%----------
+\includegraphics[width=1.7in]{Images/uulogga.png}\\%[1cm]
+\end{center}
+\end{titlepage}
+\pagebreak
+%-------------------------
+%	Table of Contents (Optional)
+%-------------------------
+\tableofcontents
+\pagebreak
+%-------------------------
+%       Main Text
+%-------------------------
+
+
+
+
+
+\printbibliography[title={References}, heading=bibnumbered]
+\end{document}
