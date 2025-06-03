@@ -1,0 +1,78 @@
+%-------------
+% PACKAGES %%
+%-------------
+\documentclass[11pt]{article}
+\usepackage[english]{babel} %CHANGE LANGUAGE 
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}
+\usepackage{subcaption}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{minted}
+\usepackage{fullpage}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage[sorting=none]{biblatex}
+\usepackage{csquotes}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+
+
+\begin{center}
+%---------------------
+%	HEADING SECTIONS
+%---------------------
+%\textsc{\LARGE RELIANT Industrial Graduate School}\\[1.5cm] % Name of your university/college
+\includegraphics[scale=0.38]{Images/reliant-banner.png}\\%[1cm]
+%------------------
+%	TITLE SECTION
+%------------------
+\HRule \\[0.4cm]
+{ \huge \bfseries Requirement Analysis}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%--------------------
+%	AUTHOR SECTION
+%--------------------
+\large\emph{Author:}\\Elias Kettunen\\[1.0cm]
+
+
+{\large \today}\\[1cm] % Date
+
+%----------
+%	LOGO 
+%----------
+\includegraphics[width=2.5in]{Images/MDU_logotyp1_RGB.jpg}\\%[1cm]
+\end{center}
+\end{titlepage}
+\pagebreak
+%-------------------------
+%	Table of Contents (Optional)
+%-------------------------
+\tableofcontents
+\pagebreak
+%-------------------------
+%       Main Text
+%-------------------------
+
+
+\input{Text/requirements.tex}
+
+
+%\printbibliography[title={References}, heading=bibnumbered]
+\end{document}
